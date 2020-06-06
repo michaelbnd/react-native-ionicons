@@ -10,9 +10,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "5": "file:..",
     "react": "16.11.0",
     "react-native": "0.62.2"
-    "5": "file:..",
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
