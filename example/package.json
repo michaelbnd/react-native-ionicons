@@ -10,9 +10,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "5": "file:..",
     "react": "16.11.0",
-    "react-native": "0.62.2"
+    "react-native": "0.62.2",
+    "react-native-svg": "^12.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
@@ -25,6 +25,9 @@
     "react-test-renderer": "16.11.0"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "/node_modules/(?!react-native)/.+"
+    ]
   }
 }
