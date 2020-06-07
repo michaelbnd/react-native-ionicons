@@ -1,9 +1,7 @@
-const iconsMap = {
-  "add": require("./src/Icons/add").default
-}
+import {Icons} from "./map"
 
 export function Icon({name, size, color, borderWidth}) {
-  return iconsMap[name]({
+  return Icons[name]({
     height: size,
     width: size,
     fill: color,
