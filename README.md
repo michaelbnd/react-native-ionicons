@@ -1,4 +1,6 @@
 # React Native Ionicons 5
+![badge](https://github.com/michaelbnd/react-native-ionicons-5/workflows/Test%20Icons%20Render/badge.svg)
+
 ## Getting started
 `npm install @react-native-ionicons/5`
 
