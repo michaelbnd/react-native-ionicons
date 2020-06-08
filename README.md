@@ -1,15 +1,32 @@
 # React Native Ionicons 5
-![badge](https://github.com/michaelbnd/react-native-ionicons-5/workflows/Test%20Icons%20Render/badge.svg)
+![badge](https://github.com/michaelbnd/react-native-ionicons-5/workflows/Icons%20Render/badge.svg)
 
-## Getting started
-`npm install @react-native-ionicons/5`
+Use the latest [Ionicons](https://ionicons.com) in your React Native project :tada:.
 
-`npm install react-native-svg`
+## Why Ionicons 5 ?
+Because these icons are made for mobile first to and they are free.
+Each icon comes in three variant.
 
-npx pod install
+filled outline sharp
 
-## Usage with jest
-Add the lines below in your package.json inside the "jest" key.
+WIP
+
+## Install
+```
+npm install @react-native-ionicons/5
+npm install react-native-svg
+npx pod-install
+```
+
+## Usage
+```
+WIP
+```
+
+
+## Jest
+Add the lines below in your package.json inside the "jest" key if you are testing your project with [Jest](https://jestjs.io)
+
 
 ```
 "transformIgnorePatterns": [
