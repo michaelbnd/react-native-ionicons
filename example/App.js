@@ -8,7 +8,7 @@
 
 import React from 'react';
 import {SafeAreaView, Text} from 'react-native';
-import {Icon} from '5';
+import {Icon} from '@michaelbnd/react-native-ionicons';
 
 export default function App() {
   return (

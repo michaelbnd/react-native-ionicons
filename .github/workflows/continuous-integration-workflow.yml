@@ -1,4 +1,4 @@
-name: Test Icons Render
+name: Icons Render
 # This workflow is triggered on pushes to the repository.
 on: [push]
 

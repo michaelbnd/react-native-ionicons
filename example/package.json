@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@michaelbnd/react-native-ionicons": "file:michaelbnd-react-native-ionicons-5.0.0.tgz",
     "react": "16.11.0",
     "react-native": "0.62.2",
     "react-native-svg": "^12.1.0"

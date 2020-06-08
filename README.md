@@ -13,7 +13,7 @@ WIP
 
 ## Install
 ```
-npm install @react-native-ionicons/5
+npm install @michaelbnd/react-native-ionicons
 npm install react-native-svg
 npx pod-install
 ```
@@ -25,7 +25,7 @@ WIP
 
 
 ## Jest
-Add the lines below in your package.json inside the "jest" key if you are testing your project with [Jest](https://jestjs.io)
+Add the lines below in your package.json inside the "jest" key if you are testing your project with [Jest](https://jestjs.io).
 
 
 ```
