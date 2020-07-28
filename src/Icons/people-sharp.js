@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Circle, Path } from "react-native-svg";
 
-function SvgPeopleSharp(props) {
+function SvgPeopleSharp(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Circle cx={152} cy={184} r={72} />

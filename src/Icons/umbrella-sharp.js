@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 
-function SvgUmbrellaSharp(props) {
+function SvgUmbrellaSharp(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Path d="M128.93 280l-.26-.3c-.9-.74-1.83-1.43-2.77-2.1zM383.08 280l2.62-2.12c-.79.58-1.57 1.17-2.34 1.79z" />

@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Rect } from "react-native-svg";
 
-function SvgQrCodeOutline(props) {
+function SvgQrCodeOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Rect x={336} y={336} width={80} height={80} rx={8} ry={8} />
@@ -17,11 +18,11 @@ function SvgQrCodeOutline(props) {
         height={176}
         rx={16}
         ry={16}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect x={96} y={96} width={80} height={80} rx={8} ry={8} />
       <Rect
@@ -31,11 +32,11 @@ function SvgQrCodeOutline(props) {
         height={176}
         rx={16}
         ry={16}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect x={96} y={336} width={80} height={80} rx={8} ry={8} />
       <Rect
@@ -45,11 +46,11 @@ function SvgQrCodeOutline(props) {
         height={176}
         rx={16}
         ry={16}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
     </Svg>
   );

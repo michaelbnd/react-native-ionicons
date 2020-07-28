@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 
-function SvgFitness(props) {
+function SvgFitness(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Path d="M193.69 152.84a16 16 0 0129.64 2.56l36.4 121.36 30-59.92a16 16 0 0128.62 0L345.89 272h96.76A213.08 213.08 0 00464 176.65C463.37 114.54 413.54 64 352.92 64c-48.09 0-80 29.54-96.92 51-16.88-21.49-48.83-51-96.92-51C98.46 64 48.63 114.54 48 176.65A211.13 211.13 0 0056.93 240h93.18z" />

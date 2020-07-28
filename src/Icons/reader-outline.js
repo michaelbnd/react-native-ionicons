@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Rect, Path } from "react-native-svg";
 
-function SvgReaderOutline(props) {
+function SvgReaderOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Rect
@@ -11,17 +12,17 @@ function SvgReaderOutline(props) {
         height={416}
         rx={48}
         ry={48}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Path
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
         d="M176 128h160M176 208h160M176 288h80"
       />
     </Svg>

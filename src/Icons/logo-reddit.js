@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 
-function SvgLogoReddit(props) {
+function SvgLogoReddit(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Path d="M324 256a36 36 0 1036 36 36 36 0 00-36-36z" />

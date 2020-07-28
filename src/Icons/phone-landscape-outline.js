@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Rect, Path } from "react-native-svg";
 
-function SvgPhoneLandscapeOutline(props) {
+function SvgPhoneLandscapeOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Rect
@@ -12,19 +13,19 @@ function SvgPhoneLandscapeOutline(props) {
         rx={48}
         ry={48}
         transform="rotate(-90 256 256)"
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Path
         d="M16 336v-24a8 8 0 018-8h0a16 16 0 0016-16v-64a16 16 0 00-16-16h0a8 8 0 01-8-8v-24"
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
     </Svg>
   );

@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Rect } from "react-native-svg";
 
-function SvgTabletLandscapeOutline(props) {
+function SvgTabletLandscapeOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Rect
@@ -12,11 +13,11 @@ function SvgTabletLandscapeOutline(props) {
         rx={48}
         ry={48}
         transform="rotate(-90 256 256)"
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
     </Svg>
   );

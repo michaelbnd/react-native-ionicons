@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Rect, Path } from "react-native-svg";
 
-function SvgBatteryDead(props) {
+function SvgBatteryDead(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Rect
@@ -11,18 +12,18 @@ function SvgBatteryDead(props) {
         height={224}
         rx={45.7}
         ry={45.7}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="square"
         strokeMiterlimit={10}
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Path
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeMiterlimit={10}
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
         d="M479 218.67v74.66"
       />
     </Svg>

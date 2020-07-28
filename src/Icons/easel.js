@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Rect, Path } from "react-native-svg";
 
-function SvgEasel(props) {
+function SvgEasel(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Rect x={80} y={112} width={352} height={208} rx={12} ry={12} />

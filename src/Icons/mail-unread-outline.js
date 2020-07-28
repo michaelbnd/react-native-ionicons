@@ -1,23 +1,24 @@
 import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 
-function SvgMailUnreadOutline(props) {
+function SvgMailUnreadOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Path
         d="M320 96H88a40 40 0 00-40 40v240a40 40 0 0040 40h334.73a40 40 0 0040-40V239"
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Path
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
         d="M112 160l144 112 87-65.67"
       />
       <Circle cx={431.95} cy={128.05} r={47.95} />

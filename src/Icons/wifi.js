@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 
-function SvgWifi(props) {
+function SvgWifi(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Path d="M346.65 304.3a136 136 0 00-180.71 0 21 21 0 1027.91 31.38 94 94 0 01124.89 0 21 21 0 0027.91-31.4z" />

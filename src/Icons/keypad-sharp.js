@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Rect } from "react-native-svg";
 
-function SvgKeypadSharp(props) {
+function SvgKeypadSharp(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Rect x={80} y={16} width={96} height={96} rx={8} ry={8} />

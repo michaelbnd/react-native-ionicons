@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Rect, Path } from "react-native-svg";
 
-function SvgTvOutline(props) {
+function SvgTvOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Rect
@@ -11,16 +12,16 @@ function SvgTvOutline(props) {
         height={272}
         rx={32.14}
         ry={32.14}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Path
-        stroke="#000"
+        stroke={props.color}
         strokeLinecap="round"
         strokeMiterlimit={10}
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
         d="M128 416h256"
       />
     </Svg>

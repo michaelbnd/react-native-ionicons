@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Rect, Path } from "react-native-svg";
 
-function SvgBatteryFullOutline(props) {
+function SvgBatteryFullOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Rect
@@ -11,11 +12,11 @@ function SvgBatteryFullOutline(props) {
         height={224}
         rx={45.7}
         ry={45.7}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="square"
         strokeMiterlimit={10}
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={85.69}
@@ -24,17 +25,17 @@ function SvgBatteryFullOutline(props) {
         height={114.14}
         rx={4}
         ry={4}
-        stroke="#000"
+        stroke={props.color}
         strokeLinecap="square"
         strokeMiterlimit={10}
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Path
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeMiterlimit={10}
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
         d="M480 218.67v74.66"
       />
     </Svg>

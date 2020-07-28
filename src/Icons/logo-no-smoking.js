@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 
-function SvgLogoNoSmoking(props) {
+function SvgLogoNoSmoking(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Path d="M360 256h16v48h-16zM112 304h129.6l-48-48H112v48z" />

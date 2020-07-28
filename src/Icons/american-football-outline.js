@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Ellipse, Path } from "react-native-svg";
 
-function SvgAmericanFootballOutline(props) {
+function SvgAmericanFootballOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Ellipse
@@ -10,18 +11,18 @@ function SvgAmericanFootballOutline(props) {
         rx={267.57}
         ry={173.44}
         transform="rotate(-45 256 256.002)"
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Path
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
         d="M334.04 177.96L177.96 334.04M278.3 278.3l-44.6-44.6M322.89 233.7l-44.59-44.59M456.68 211.4L300.6 55.32M211.4 456.68L55.32 300.6M233.7 322.89l-44.59-44.59"
       />
     </Svg>

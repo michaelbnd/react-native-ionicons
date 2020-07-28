@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Rect } from "react-native-svg";
 
-function SvgCellularOutline(props) {
+function SvgCellularOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Rect
@@ -11,10 +12,10 @@ function SvgCellularOutline(props) {
         height={320}
         rx={8}
         ry={8}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={288}
@@ -23,10 +24,10 @@ function SvgCellularOutline(props) {
         height={240}
         rx={8}
         ry={8}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={160}
@@ -35,10 +36,10 @@ function SvgCellularOutline(props) {
         height={176}
         rx={8}
         ry={8}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={32}
@@ -47,10 +48,10 @@ function SvgCellularOutline(props) {
         height={112}
         rx={8}
         ry={8}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
     </Svg>
   );

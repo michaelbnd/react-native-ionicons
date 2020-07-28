@@ -1,15 +1,16 @@
 import * as React from "react";
 import Svg, { Path, Rect } from "react-native-svg";
 
-function SvgBarbellOutline(props) {
+function SvgBarbellOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Path
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
         d="M48 256h416"
       />
       <Rect
@@ -19,11 +20,11 @@ function SvgBarbellOutline(props) {
         height={256}
         rx={16}
         ry={16}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={96}
@@ -32,11 +33,11 @@ function SvgBarbellOutline(props) {
         height={256}
         rx={16}
         ry={16}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={32}
@@ -45,11 +46,11 @@ function SvgBarbellOutline(props) {
         height={128}
         rx={8}
         ry={8}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={464}
@@ -58,11 +59,11 @@ function SvgBarbellOutline(props) {
         height={128}
         rx={8}
         ry={8}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
     </Svg>
   );

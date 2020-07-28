@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 
-function SvgFingerPrint(props) {
+function SvgFingerPrint(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Path d="M63.28 202a15.29 15.29 0 01-7.7-2 14.84 14.84 0 01-5.52-20.46C69.34 147.36 128 72.25 256 72.25c55.47 0 104.12 14.57 144.53 43.29 33.26 23.57 51.9 50.25 60.78 63.1a14.79 14.79 0 01-4 20.79 15.52 15.52 0 01-21.24-4C420 172.32 371 102 256 102c-112.25 0-163 64.71-179.53 92.46A15 15 0 0163.28 202z" />

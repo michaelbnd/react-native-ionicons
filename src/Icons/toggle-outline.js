@@ -1,17 +1,18 @@
 import * as React from "react";
 import Svg, { Circle, Rect } from "react-native-svg";
 
-function SvgToggleOutline(props) {
+function SvgToggleOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Circle
         cx={368}
         cy={256}
         r={128}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={16}
@@ -20,10 +21,10 @@ function SvgToggleOutline(props) {
         height={256}
         rx={128}
         ry={128}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
     </Svg>
   );

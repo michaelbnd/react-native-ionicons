@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Rect } from "react-native-svg";
 
-function SvgStatsChartOutline(props) {
+function SvgStatsChartOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Rect
@@ -11,11 +12,11 @@ function SvgStatsChartOutline(props) {
         height={160}
         rx={8}
         ry={8}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={288}
@@ -24,11 +25,11 @@ function SvgStatsChartOutline(props) {
         height={256}
         rx={8}
         ry={8}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={400}
@@ -37,11 +38,11 @@ function SvgStatsChartOutline(props) {
         height={368}
         rx={8}
         ry={8}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={176}
@@ -50,11 +51,11 @@ function SvgStatsChartOutline(props) {
         height={448}
         rx={8}
         ry={8}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
     </Svg>
   );

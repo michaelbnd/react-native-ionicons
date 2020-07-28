@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Rect } from "react-native-svg";
 
-function SvgFilmOutline(props) {
+function SvgFilmOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Rect
@@ -11,10 +12,10 @@ function SvgFilmOutline(props) {
         height={320}
         rx={28}
         ry={28}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={384}
@@ -23,10 +24,10 @@ function SvgFilmOutline(props) {
         height={80}
         rx={28}
         ry={28}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={384}
@@ -35,10 +36,10 @@ function SvgFilmOutline(props) {
         height={80}
         rx={28}
         ry={28}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={384}
@@ -47,10 +48,10 @@ function SvgFilmOutline(props) {
         height={80}
         rx={28}
         ry={28}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={384}
@@ -59,10 +60,10 @@ function SvgFilmOutline(props) {
         height={80}
         rx={28}
         ry={28}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={48}
@@ -71,10 +72,10 @@ function SvgFilmOutline(props) {
         height={80}
         rx={28}
         ry={28}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={48}
@@ -83,10 +84,10 @@ function SvgFilmOutline(props) {
         height={80}
         rx={28}
         ry={28}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={48}
@@ -95,10 +96,10 @@ function SvgFilmOutline(props) {
         height={80}
         rx={28}
         ry={28}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={48}
@@ -107,10 +108,10 @@ function SvgFilmOutline(props) {
         height={80}
         rx={28}
         ry={28}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={128}
@@ -119,10 +120,10 @@ function SvgFilmOutline(props) {
         height={160}
         rx={28}
         ry={28}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={128}
@@ -131,10 +132,10 @@ function SvgFilmOutline(props) {
         height={160}
         rx={28}
         ry={28}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
     </Svg>
   );

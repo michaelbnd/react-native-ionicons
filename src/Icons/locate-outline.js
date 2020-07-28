@@ -1,12 +1,13 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 
-function SvgLocateOutline(props) {
+function SvgLocateOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Path
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={48}
@@ -14,14 +15,14 @@ function SvgLocateOutline(props) {
       />
       <Path
         d="M256 112a144 144 0 10144 144 144 144 0 00-144-144z"
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeMiterlimit={10}
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Path
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={48}

@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Rect, Circle } from "react-native-svg";
 
-function SvgBandageOutline(props) {
+function SvgBandageOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Rect
@@ -12,11 +13,11 @@ function SvgBandageOutline(props) {
         rx={88.12}
         ry={88.12}
         transform="rotate(-45 256 256.002)"
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={169.41}
@@ -26,11 +27,11 @@ function SvgBandageOutline(props) {
         rx={32}
         ry={32}
         transform="rotate(45 257.409 254.582)"
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Circle cx={256} cy={208} r={16} />
       <Circle cx={304} cy={256} r={16} />

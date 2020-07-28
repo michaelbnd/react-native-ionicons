@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 
-function SvgIceCream(props) {
+function SvgIceCream(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Path d="M183 352c-21.84-.52-39-18.9-39-40.74v-34.07a8 8 0 00-6-7.74c-33.75-8.85-58-39.71-58-77.45a80.14 80.14 0 0166.27-78.82 8 8 0 006.62-6.83 104 104 0 01206.22 0 8 8 0 006.62 6.83A80 80 0 01352 272a74.33 74.33 0 01-47.45-17.41 7.93 7.93 0 00-9.92-.14A62.89 62.89 0 01256 268a80.47 80.47 0 01-21.8-3.18 8 8 0 00-10.2 7.69V312a40 40 0 01-41 40z" />

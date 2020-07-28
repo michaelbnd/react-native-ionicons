@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 
-function SvgPersonAddSharp(props) {
+function SvgPersonAddSharp(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Path d="M106 304v-54h54v-36h-54v-54H70v54H16v36h54v54h36z" />

@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Rect } from "react-native-svg";
 
-function SvgAppsOutline(props) {
+function SvgAppsOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Rect
@@ -11,10 +12,10 @@ function SvgAppsOutline(props) {
         height={80}
         rx={40}
         ry={40}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeMiterlimit={10}
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={216}
@@ -23,10 +24,10 @@ function SvgAppsOutline(props) {
         height={80}
         rx={40}
         ry={40}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeMiterlimit={10}
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={368}
@@ -35,10 +36,10 @@ function SvgAppsOutline(props) {
         height={80}
         rx={40}
         ry={40}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeMiterlimit={10}
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={64}
@@ -47,10 +48,10 @@ function SvgAppsOutline(props) {
         height={80}
         rx={40}
         ry={40}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeMiterlimit={10}
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={216}
@@ -59,10 +60,10 @@ function SvgAppsOutline(props) {
         height={80}
         rx={40}
         ry={40}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeMiterlimit={10}
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={368}
@@ -71,10 +72,10 @@ function SvgAppsOutline(props) {
         height={80}
         rx={40}
         ry={40}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeMiterlimit={10}
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={64}
@@ -83,10 +84,10 @@ function SvgAppsOutline(props) {
         height={80}
         rx={40}
         ry={40}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeMiterlimit={10}
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={216}
@@ -95,10 +96,10 @@ function SvgAppsOutline(props) {
         height={80}
         rx={40}
         ry={40}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeMiterlimit={10}
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={368}
@@ -107,10 +108,10 @@ function SvgAppsOutline(props) {
         height={80}
         rx={40}
         ry={40}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeMiterlimit={10}
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
     </Svg>
   );

@@ -1,7 +1,8 @@
 import * as React from "react";
 import Svg, { Circle, Path } from "react-native-svg";
 
-function SvgHappyOutline(props) {
+function SvgHappyOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Circle cx={184} cy={232} r={24} />
@@ -11,10 +12,10 @@ function SvgHappyOutline(props) {
         cx={256}
         cy={256}
         r={208}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeMiterlimit={10}
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
     </Svg>
   );

@@ -1,16 +1,17 @@
 import * as React from "react";
 import Svg, { Path, Rect } from "react-native-svg";
 
-function SvgBarChartOutline(props) {
+function SvgBarChartOutline(props) { 
+  const strokeWidth = props.strokeWidth ? props.strokeWidth : 32
   return (
     <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
       <Path
         d="M32 32v432a16 16 0 0016 16h432"
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={96}
@@ -19,11 +20,11 @@ function SvgBarChartOutline(props) {
         height={192}
         rx={20}
         ry={20}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={240}
@@ -32,11 +33,11 @@ function SvgBarChartOutline(props) {
         height={240}
         rx={20}
         ry={20}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
       <Rect
         x={383.64}
@@ -45,11 +46,11 @@ function SvgBarChartOutline(props) {
         height={304}
         rx={20}
         ry={20}
-        fill="none"
-        stroke="#000"
+        fill={props.fill}
+        stroke={props.color}
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth={32}
+        strokeWidth={strokeWidth}
       />
     </Svg>
   );
