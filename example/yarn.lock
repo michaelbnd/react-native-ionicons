@@ -941,7 +941,7 @@
     "chalk" "^4.0.0"
 
 "@michaelbnd/react-native-ionicons@file:michaelbnd-react-native-ionicons-5.0.1.tgz":
-  "integrity" "sha512-M3bhSmuob78+v566nmx2jpqUcC20L004wpyke1Dqogn7DblyvoBlEsDR0mxjNWAif+K3e1CBiIqtrxQVXrLQ5w=="
+  "integrity" "sha512-46bSpHCiIRjT+9v7pwHJo6CXHayWA3cp2EnItkX4zep3NZEQu2nE98QpDGUMkiuogmK19KYbrbVHR2XCXKwtcQ=="
   "resolved" "file:michaelbnd-react-native-ionicons-5.0.1.tgz"
   "version" "5.0.1"
 
