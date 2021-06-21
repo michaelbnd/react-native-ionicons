@@ -8,12 +8,22 @@
 /* eslint-disable react-native/no-inline-styles */
 
 import React from 'react';
-import {SafeAreaView, Text, FlatList, View} from 'react-native';
+import {
+  SafeAreaView,
+  Text,
+  FlatList,
+  View,
+  useWindowDimensions,
+} from 'react-native';
 import {Icon} from '@michaelbnd/react-native-ionicons';
 
 import names from './names.json';
 
 const App = () => {
+  const {width} = useWindowDimensions();
+  const iconSize = (width - 6 * 32) / 5;
+
+  console.log(iconSize);
   return (
     <SafeAreaView style={{flex: 1}}>
       <Text
@@ -33,7 +43,7 @@ const App = () => {
         keyExtractor={item => item}
         renderItem={({item}) => (
           <View style={{padding: 16}}>
-            <Icon name={item} size={40} color="#000" />
+            <Icon name={item} size={iconSize} color="#000" />
           </View>
         )}
       />
