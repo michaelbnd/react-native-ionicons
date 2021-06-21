@@ -2,13 +2,7 @@ import * as React from "react";
 import Svg, { Path } from "react-native-svg";
 
 function SvgBusinessSharp(props) {
-  return (
-    <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
-      <Path d="M320 176V16H32v480h128v-96h32v96h288V176zM112 432H80v-32h32zm0-80H80v-32h32zm0-80H80v-32h32zm0-80H80v-32h32zm0-80H80V80h32zm128-32h32v32h-32zm-48 272h-32v-32h32zm0-80h-32v-32h32zm0-80h-32v-32h32zm0-80h-32V80h32zm80 320h-32v-32h32zm0-80h-32v-32h32zm0-80h-32v-32h32zm0-80h-32v-32h32v32zm176 272H320v-32h32v-32h-32v-48h32v-32h-32v-48h32v-32h-32v-32h128z" />
-      <Path d="M384 400h32v32h-32zM384 320h32v32h-32zM384 240h32v32h-32z" />
-    </Svg>
-  );
+  return <Svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512" {...props}><Path d="M320 176V16H32v480h128v-96h32v96h288V176zM112 432H80v-32h32zm0-80H80v-32h32zm0-80H80v-32h32zm0-80H80v-32h32zm0-80H80V80h32zm128-32h32v32h-32zm-48 272h-32v-32h32zm0-80h-32v-32h32zm0-80h-32v-32h32zm0-80h-32V80h32zm80 320h-32v-32h32zm0-80h-32v-32h32zm0-80h-32v-32h32zm0-80h-32v-32h32v32zm176 272H320v-32h32v-32h-32v-48h32v-32h-32v-48h32v-32h-32v-32h128z" /><Path d="M384 400h32v32h-32zM384 320h32v32h-32zM384 240h32v32h-32z" /></Svg>;
 }
 
 export default SvgBusinessSharp;
-
