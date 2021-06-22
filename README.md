@@ -46,6 +46,8 @@ export default function App() {
 }
 ```
 
+<img src="Screenshots/rockets.png" height=400>
+
 
 ## Jest
 Add the lines below in your package.json inside the "jest" key if you are testing your project with [Jest](https://jestjs.io).

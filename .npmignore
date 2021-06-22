@@ -65,3 +65,4 @@ example/
 *.tgz
 
 src/generate_icons.sh
+Screenshots/
