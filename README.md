@@ -1,7 +1,7 @@
 # React Native Ionicons 5
 ![badge](https://github.com/michaelbnd/react-native-ionicons-5/workflows/Icons%20Render/badge.svg)
 
-Use the latest [Ionicons](https://ionicons.com) in your React Native project :tada:.
+Use the latest [Ionicons](https://ionicons.com) (5.5.2) in your React Native project :tada:.
 
 <img src="Screenshots/icons.gif" height=400>
 
