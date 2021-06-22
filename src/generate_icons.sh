@@ -10,7 +10,7 @@ if [ -z "$1" ]
 fi
 printf "\e[1m\e[92mConverting the svg icons to jsx...\e[0m\n"
 mkdir Icons
-npx @svgr/cli --native --icon --no-prettier --filename-case kebab -d Icons $1
+npx @svgr/cli --native --icon --no-prettier --filename-case kebab --replace-attr-values "#000={props.fill}" -d Icons $1
 rm Icons/index.js
 
 printf "\e[1m\e[92mCreating the map...\e[0m\n"
