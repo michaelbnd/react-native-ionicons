@@ -11,15 +11,15 @@ Ionicons is a completely open-source icon set with 1,300 icons.
 
 Each icon has an outline, filled, and sharp variant.
 
-### Outline
+#### Outline
 
 <img width="100" src="https://unpkg.com/ionicons@5.5.2/dist/svg/glasses-outline.svg">
 
-### Filled
+#### Filled
 
 <img width="100" src="https://unpkg.com/ionicons@5.5.2/dist/svg/glasses.svg">
 
-### Sharp
+#### Sharp
 
 <img width="100" src="https://unpkg.com/ionicons@5.5.2/dist/svg/glasses-sharp.svg">
 
