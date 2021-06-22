@@ -31,18 +31,18 @@ npx pod-install
 
 ## Usage
 ```javascript
-import React from 'react'
-import {View} from 'react-native'
-import {Icon} from '@michaelbnd/react-native-ionicons'
+import React from 'react';
+import {View} from 'react-native';
+import {Icon} from '@michaelbnd/react-native-ionicons';
 
-export function App() {
+export default function App() {
   return (
-    <View style={{flex: 1, align-items: 'center', justify-content: 'center', flexDirection: 'row'}}>
-      <Icon name="rocket-outline" size={30} color="#000" />
-      <Icon name="rocket" size={30} color="#000" />
-      <Icon name="rocket-sharp" size={30} color="#000" />
+    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', flexDirection: 'row'}}>
+      <Icon name="rocket-outline" size={64} color="#000" />
+      <Icon name="rocket" size={64} color="#000" />
+      <Icon name="rocket-sharp" size={64} color="#000" />
     </View>
-  )
+  );
 }
 ```
 
