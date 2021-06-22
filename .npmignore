@@ -64,5 +64,9 @@ example/
 # From npm pack
 *.tgz
 
+# Scripts
 src/generate_icons.sh
-Screenshots/
+test.sh
+
+# CI
+.github/
