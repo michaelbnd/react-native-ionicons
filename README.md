@@ -3,6 +3,8 @@
 
 Use the latest [Ionicons](https://ionicons.com) in your React Native project :tada:.
 
+<img src="Screenshots/icons.gif" height=400>
+
 ## Why Ionicons 5 ?
 Ionicons is a completely open-source icon set with 1,300 icons.
 
