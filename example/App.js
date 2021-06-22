@@ -5,21 +5,126 @@
  * @format
  * @flow strict-local
  */
+/* eslint-disable react-native/no-inline-styles */
 
-import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import React, {useState} from 'react';
+import {
+  SafeAreaView,
+  Text,
+  FlatList,
+  TextInput,
+  TouchableOpacity,
+  View,
+  useWindowDimensions,
+} from 'react-native';
 import {Icon} from '@michaelbnd/react-native-ionicons';
+
 import names from './names.json';
 
-//TODO Layout
-export default function App() {
+function PickerItem({tag, selection, setSelection}) {
   return (
-    <SafeAreaView
-      style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      {names.map((item, index) => (
-        <Icon name={item} key={index} size={40} color="orange" />
-      ))}
-      <Text style={{fontWeight: '600', fontSize: 40}}>Add</Text>
-    </SafeAreaView>
+    <TouchableOpacity
+      style={{padding: 6}}
+      onPress={() => {
+        setSelection(tag);
+      }}>
+      <Text
+        style={{
+          color: '#007aff',
+          fontWeight: '600',
+          fontSize: 16,
+          textDecorationLine: selection === tag ? 'underline' : undefined,
+        }}>
+        {tag}
+      </Text>
+    </TouchableOpacity>
   );
 }
+
+const App = () => {
+  const {width} = useWindowDimensions();
+  const iconSize = (width - 6 * 32) / 5;
+  const [color, setColor] = useState('');
+  const [iconStyle, setIconStyle] = useState('Outline');
+
+  return (
+    <SafeAreaView style={{flex: 1}}>
+      <Text
+        style={{
+          paddingHorizontal: 32,
+          paddingTop: 20,
+          paddingBottom: 20,
+          fontWeight: '600',
+          fontSize: 30,
+        }}>
+        react-native-ionicons
+      </Text>
+      <View
+        style={{
+          marginHorizontal: 32,
+          flexDirection: 'row',
+          alignItems: 'center',
+          paddingBottom: 8,
+        }}>
+        <Text style={{fontSize: 16, color: '#007aff', fontWeight: '600'}}>
+          #
+        </Text>
+        <TextInput
+          style={{fontSize: 16, color: '#007aff', fontWeight: '600'}}
+          autoCapitalize={'none'}
+          value={color}
+          onChangeText={text => {
+            setColor(text.replace(/[^0-9a-f]/g, ''));
+          }}
+          placeholder="00c7be"
+          maxLength={6}
+        />
+        <View style={{flex: 1}} />
+        <PickerItem
+          tag="Outline"
+          selection={iconStyle}
+          setSelection={setIconStyle}
+        />
+        <PickerItem
+          tag="Filled"
+          selection={iconStyle}
+          setSelection={setIconStyle}
+        />
+        <PickerItem
+          tag="Sharp"
+          selection={iconStyle}
+          setSelection={setIconStyle}
+        />
+      </View>
+      <FlatList
+        contentContainerStyle={{paddingHorizontal: 16}}
+        numColumns={5}
+        data={names}
+        keyExtractor={item => item}
+        renderItem={({item}) => {
+          let iconName = item;
+
+          switch (iconStyle) {
+            case 'Outline':
+              iconName = `${item}-outline`;
+              break;
+            case 'Sharp':
+              iconName = `${item}-sharp`;
+              break;
+          }
+          return (
+            <View style={{padding: 16}}>
+              <Icon
+                name={iconName}
+                size={iconSize}
+                color={color.length !== 6 ? '#000' : '#' + color}
+              />
+            </View>
+          );
+        }}
+      />
+    </SafeAreaView>
+  );
+};
+
+export default App;

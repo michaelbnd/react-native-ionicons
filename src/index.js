@@ -1,10 +1,13 @@
 import {Icons} from "./map"
 
-export function Icon({name, size, color, borderWidth}) {
-  return Icons[name]({
+export function Icon({name, size, color}) {
+  return Icons[name] === undefined ? Icons["help"]({
     height: size,
     width: size,
     fill: color,
-   // borderWidth: borderWidth
-  });
+  }) : Icons[name]({
+    height: size,
+    width: size,
+    fill: color,
+  })
 }

@@ -1,22 +1,8 @@
 import * as React from "react";
-import Svg, { Rect, Path } from "react-native-svg";
+import Svg, { Path } from "react-native-svg";
 
 function SvgCalendarSharp(props) {
-  return (
-    <Svg width="1em" height="1em" viewBox="0 0 512 512" {...props}>
-      <Rect x={272} y={208} width={48} height={48} rx={4} ry={4} />
-      <Rect x={352} y={208} width={48} height={48} rx={4} ry={4} />
-      <Rect x={272} y={288} width={48} height={48} rx={4} ry={4} />
-      <Rect x={352} y={288} width={48} height={48} rx={4} ry={4} />
-      <Rect x={112} y={288} width={48} height={48} rx={4} ry={4} />
-      <Rect x={192} y={288} width={48} height={48} rx={4} ry={4} />
-      <Rect x={112} y={368} width={48} height={48} rx={4} ry={4} />
-      <Rect x={192} y={368} width={48} height={48} rx={4} ry={4} />
-      <Rect x={272} y={368} width={48} height={48} rx={4} ry={4} />
-      <Path d="M448 64h-48V32h-40v32H152V32h-40v32H64a32 32 0 00-32 32v352a32 32 0 0032 32h384a32 32 0 0032-32V96a32 32 0 00-32-32zm-12 372H76V176h360z" />
-    </Svg>
-  );
+  return <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" {...props}><Path d="M32 456a24 24 0 0024 24h400a24 24 0 0024-24V176H32zm320-244a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm-80-80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm-80-80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm-80-80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zm0 80a4 4 0 014-4h40a4 4 0 014 4v40a4 4 0 01-4 4h-40a4 4 0 01-4-4zM456 64h-55.92V32h-48v32H159.92V32h-48v32H56a23.8 23.8 0 00-24 23.77V144h448V87.77A23.8 23.8 0 00456 64z" /></Svg>;
 }
 
 export default SvgCalendarSharp;
-
