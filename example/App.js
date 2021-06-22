@@ -101,15 +101,27 @@ const App = () => {
         numColumns={5}
         data={names}
         keyExtractor={item => item}
-        renderItem={({item}) => (
-          <View style={{padding: 16}}>
-            <Icon
-              name={item}
-              size={iconSize}
-              color={color.length !== 6 ? '#000' : '#' + color}
-            />
-          </View>
-        )}
+        renderItem={({item}) => {
+          let iconName = item;
+
+          switch (iconStyle) {
+            case 'Outline':
+              iconName = `${item}-outline`;
+              break;
+            case 'Sharp':
+              iconName = `${item}-sharp`;
+              break;
+          }
+          return (
+            <View style={{padding: 16}}>
+              <Icon
+                name={iconName}
+                size={iconSize}
+                color={color.length !== 6 ? '#000' : '#' + color}
+              />
+            </View>
+          );
+        }}
       />
     </SafeAreaView>
   );
