@@ -2,9 +2,10 @@
 
 rm example/*.tgz
 npm pack
-cp *.tgz example
+mv *.tgz example
 
 cd example
+npm uninstall @michaelbnd/react-native-ionicons
 npm i
 npm i *.tgz
 npm test

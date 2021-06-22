@@ -940,9 +940,9 @@
     "@types/yargs" "^15.0.0"
     "chalk" "^4.0.0"
 
-"@michaelbnd/react-native-ionicons@file:michaelbnd-react-native-ionicons-5.0.1.tgz":
-  "integrity" "sha512-46bSpHCiIRjT+9v7pwHJo6CXHayWA3cp2EnItkX4zep3NZEQu2nE98QpDGUMkiuogmK19KYbrbVHR2XCXKwtcQ=="
-  "resolved" "file:michaelbnd-react-native-ionicons-5.0.1.tgz"
+"@michaelbnd/react-native-ionicons@^5.0.1":
+  "integrity" "sha512-BIIG6Mu/rAZcqbBlPUw/6PREwIlGaDx7ngmbGW+WSAQTwZei/oOSCh7cwVZ4XTSzSGH5QDEDCTiyQgnfzNcP8g=="
+  "resolved" "https://registry.npmjs.org/@michaelbnd/react-native-ionicons/-/react-native-ionicons-5.0.1.tgz"
   "version" "5.0.1"
 
 "@react-native-community/cli-debugger-ui@^5.0.1":
